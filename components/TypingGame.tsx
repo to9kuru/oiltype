@@ -57,12 +57,12 @@ const normalizeKeystroke = (str: string) => {
 
 const getModeInfo = (mode: GameMode) => {
   switch(mode) {
-    case 'onion': return { icon: <Timer className="w-4 h-4" />, name: 'ONION (タイムアタック)', rule: '60秒間の限界に挑戦。単語リストはループ。速度こそ正義。' };
-    case 'carrot': return { icon: <Heart className="w-4 h-4" />, name: 'CARROT (サバイバル)', rule: '初期時間7秒。正解ごとに [文字数 × 0.1秒] 回復。止まれば終わり。' };
-    case 'grape': return { icon: <Cherry className="w-4 h-4" />, name: 'GRAPE (突然死)', rule: '1文字でもミスしたら即終了。リストは無限ループ。究極の精度。' };
-    case 'water': return { icon: <Droplet className="w-4 h-4" />, name: 'WATER (無限)', rule: '時間制限も何もないです。油のように、なる。' };
-    case 'tomato': return { icon: <Utensils className="w-4 h-4" />, name: 'TOMATO (30連打)', rule: 'リストをループして合計30ワードを打ち抜くタイムアタック。' };
-    case 'pro': return { icon: <Swords className="w-4 h-4" />, name: 'PRO (競技)', rule: '60秒間。AIが毎回生成する難読漢字。初見での対応力を。' };
+    case 'onion': return { icon: <Timer className="w-4 h-4" />, name: 'ONION (タイムアタック)', rule: '60秒間の限界に挑戦。' };
+    case 'carrot': return { icon: <Heart className="w-4 h-4" />, name: 'CARROT (サバイバル)', rule: '初期時間7秒。正解ごとに [文字数 × 0.1秒] 回復。' };
+    case 'grape': return { icon: <Cherry className="w-4 h-4" />, name: 'GRAPE (突然死)', rule: '1文字でもミスしたら即終了。デスマッチ' };
+    case 'water': return { icon: <Droplet className="w-4 h-4" />, name: 'WATER (無限)', rule: '時間制限も何もないです。' };
+    case 'tomato': return { icon: <Utensils className="w-4 h-4" />, name: 'TOMATO (30連打)', rule: '30ワードを打ち抜くタイムアタック。' };
+    case 'pro': return { icon: <Swords className="w-4 h-4" />, name: 'PRO (競技)', rule: '60秒間。公正さあり' };
     default: return { icon: <Info className="w-4 h-4" />, name: 'NORMAL', rule: '正確にタイピングしてください。' };
   }
 };
